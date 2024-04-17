@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'Apollo'
-  s.version = `scripts/get-version.sh`
+  s.version = '1.3.3-3'
   s.author = 'Apollo GraphQL'
   s.homepage = 'https://github.com/apollographql/apollo-ios'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = "A GraphQL client for iOS, written in Swift."
-  s.source = { :git => 'https://github.com/apollographql/apollo-ios.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/allanscofield/apollo-visionos.git', :tag => s.version }
   s.requires_arc = true
   s.swift_version = '5.6'
   s.default_subspecs = 'Core'
@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.14'
   s.tvos.deployment_target = '12.0'
   s.watchos.deployment_target = '5.0'
+  s.visionos.deployment_target = '1.0'
 
   cli_binary_name = 'apollo-ios-cli'
   s.preserve_paths = [cli_binary_name]
